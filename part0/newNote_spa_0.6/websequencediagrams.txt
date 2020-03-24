@@ -1,0 +1,13 @@
+note over browser:
+assuming page is rendered
+when "save" is selected...
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_s
+server-->browser:HTTP 201 (Created - HTML-code) \n[{ "message":"note created" }]
+
+note over browser:
+JavaScript uses the content of the
+request payload to dynamically
+update the list
+end note
