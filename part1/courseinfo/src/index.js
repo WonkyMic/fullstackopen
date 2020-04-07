@@ -7,7 +7,7 @@ import {Total} from './Total'
 const App = () => {
   const course = {
     name: 'Half Stack application development',
-    parts: [
+    parts:[
       {
         name: 'Fundamentals of React',
         exercises: 10
